@@ -14,7 +14,8 @@
 //***********************************//
 //*************DEFINE****************//
 //***********************************//
-#define TAG_WOR_CSGO "[AIO WOD] - "
+#define TAG_WOR_CSGO 				"[AIO WOD] - "
+#define PLUGIN_VERSION_WOR_CSGO		"1.0.0"
 
 
 //***********************************//
@@ -40,7 +41,7 @@ new M_WOR_DECALS_BLOOD[13];
 /***********************************************************/
 public OnPluginStartWODCsgo()
 {
-	CreateConVar("aio_win_or_die_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_win_or_die_version", PLUGIN_VERSION_WOR_CSGO, "Version", CVARS);
 	
 	cvar_active_wor_csgo 					= CreateConVar("active_wor_csgo",  				"0", 					"Enable/Disable Win or Die", 			DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_wor_csgo_dev				= CreateConVar("active_wor_csgo_dev", 			"0", 					"Enable/Disable Win or Die Dev Mod", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
